@@ -44,7 +44,7 @@ function showHomeSelection (homeSelected, result) {
 
         setTimeout(() => {
             // BUG! :/
-            $(".paper-container").attr("style", "left: -50% !important");
+            $(".paper-container").addClass("paper-container-bug-fix");
         }, 250);
     }, 3000);
 

@@ -317,6 +317,14 @@ body {
     background-color: unset;
 }
 
+.expanded-container {
+    width: 400px !important;
+}
+
+.paper-container-bug-fix {
+    left: -50% !important;
+}
+
 @media (max-width: 1000px) {
     .header {
         width: 80%;
@@ -357,6 +365,26 @@ body {
             -ms-transform: translate(15%, 100%);
                 transform: translate(15%, 100%);
         left: 70%;
+    }
+
+    .decision-result {
+        transform: translate(-50%, 150%);
+    }
+
+    .expanded-container {
+        width: 130px !important;
+    }
+
+    .decision-result-user {
+        right: 55%;
+    }
+
+    .decision {
+        width: 150px;
+    }
+
+    .page-text {
+        font-size: 13pt;
     }
 }
 

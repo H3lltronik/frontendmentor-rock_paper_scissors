@@ -262,7 +262,3 @@
     -webkit-animation: fade-in 1s forwards;
             animation: fade-in 1s forwards;
 }
-
-.expanded-container {
-    width: 400px !important;
-}
