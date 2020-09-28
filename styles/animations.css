@@ -1,21 +1,64 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+@-webkit-keyframes selectedPaper {
+    0% {}
+    100% {
+        left: -75%;
+        top: 25%;
+        -webkit-transform: translate(0, 0) scale(1.4);
+                transform: translate(0, 0) scale(1.4);
+    }
+}
 @keyframes selectedPaper {
     0% {}
     100% {
         left: -75%;
         top: 25%;
-        transform: translate(0, 0) scale(1.4);
+        -webkit-transform: translate(0, 0) scale(1.4);
+                transform: translate(0, 0) scale(1.4);
+    }
+}
+@-webkit-keyframes reversePaper {
+    0% {
+        left: -75%;
+        top: 25%;
+        -webkit-transform: translate(0, 0) scale(1.4);
+                transform: translate(0, 0) scale(1.4);
+    }
+    100% {
+        left: 0%;
+        top: 0%;
+        -webkit-transform: translate(-50%, -50%) scale(1);
+                transform: translate(-50%, -50%) scale(1);
     }
 }
 @keyframes reversePaper {
     0% {
         left: -75%;
         top: 25%;
-        transform: translate(0, 0) scale(1.4);
+        -webkit-transform: translate(0, 0) scale(1.4);
+                transform: translate(0, 0) scale(1.4);
     }
     100% {
         left: 0%;
         top: 0%;
-        transform: translate(-50%, -50%) scale(1);
+        -webkit-transform: translate(-50%, -50%) scale(1);
+                transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@-webkit-keyframes selectedScissors {
+    0% {}
+    100% {
+        right: 100%;
+        top: 25%;
+        -webkit-transform: translate(0, 0) scale(1.4);
+                transform: translate(0, 0) scale(1.4);
     }
 }
 
@@ -24,19 +67,46 @@
     100% {
         right: 100%;
         top: 25%;
-        transform: translate(0, 0) scale(1.4);
+        -webkit-transform: translate(0, 0) scale(1.4);
+                transform: translate(0, 0) scale(1.4);
+    }
+}
+@-webkit-keyframes reverseScissors {
+    0% {
+        right: 100%;
+        top: 25%;
+        -webkit-transform: translate(0, 0) scale(1.4);
+                transform: translate(0, 0) scale(1.4);
+    }
+    100% {
+        right: 0%;
+        top: 0%;
+        -webkit-transform: translate(50%, -50%) scale(1);
+                transform: translate(50%, -50%) scale(1);
     }
 }
 @keyframes reverseScissors {
     0% {
         right: 100%;
         top: 25%;
-        transform: translate(0, 0) scale(1.4);
+        -webkit-transform: translate(0, 0) scale(1.4);
+                transform: translate(0, 0) scale(1.4);
     }
     100% {
         right: 0%;
         top: 0%;
-        transform: translate(50%, -50%) scale(1);
+        -webkit-transform: translate(50%, -50%) scale(1);
+                transform: translate(50%, -50%) scale(1);
+    }
+}
+
+@-webkit-keyframes selectedRock {
+    0% {}
+    100% {
+        right: 100%;
+        bottom: 0%;
+        -webkit-transform: translate(0, 0) scale(1.4);
+                transform: translate(0, 0) scale(1.4);
     }
 }
 
@@ -45,29 +115,66 @@
     100% {
         right: 100%;
         bottom: 0%;
-        transform: translate(0, 0) scale(1.4);
+        -webkit-transform: translate(0, 0) scale(1.4);
+                transform: translate(0, 0) scale(1.4);
+    }
+}
+@-webkit-keyframes reverseRock {
+    0% {
+        right: 100%;
+        bottom: 0%;
+        -webkit-transform: translate(0, 0) scale(1.4);
+                transform: translate(0, 0) scale(1.4);
+    }
+    100% {
+        right: 50%;
+        bottom: 0%;
+        -webkit-transform: translate(50%, 50%) scale(1);
+                transform: translate(50%, 50%) scale(1);
     }
 }
 @keyframes reverseRock {
     0% {
         right: 100%;
         bottom: 0%;
-        transform: translate(0, 0) scale(1.4);
+        -webkit-transform: translate(0, 0) scale(1.4);
+                transform: translate(0, 0) scale(1.4);
     }
     100% {
         right: 50%;
         bottom: 0%;
-        transform: translate(50%, 50%) scale(1);
+        -webkit-transform: translate(50%, 50%) scale(1);
+                transform: translate(50%, 50%) scale(1);
     }
 }
 
 @media (max-width: 1000px) {
+    @-webkit-keyframes selectedPaper {
+        0% {}
+        100% {
+            left: -35%;
+            top: 0%;
+            -webkit-transform: translate(0, -100%);
+                    transform: translate(0, -100%);
+        }
+    }
     @keyframes selectedPaper {
         0% {}
         100% {
             left: -35%;
             top: 0%;
-            transform: translate(0, -100%);
+            -webkit-transform: translate(0, -100%);
+                    transform: translate(0, -100%);
+        }
+    }
+    
+    @-webkit-keyframes selectedScissors {
+        0% {}
+        100% {
+            right: 70%;
+            top: 0%;
+            -webkit-transform: translate(0, -100%);
+                    transform: translate(0, -100%);
         }
     }
     
@@ -76,7 +183,18 @@
         100% {
             right: 70%;
             top: 0%;
-            transform: translate(0, -100%);
+            -webkit-transform: translate(0, -100%);
+                    transform: translate(0, -100%);
+        }
+    }
+    
+    @-webkit-keyframes selectedRock {
+        0% {}
+        100% {
+            right: 70%;
+            bottom: 100%;
+            -webkit-transform: translate(0%, 0%);
+                    transform: translate(0%, 0%);
         }
     }
     
@@ -85,33 +203,50 @@
         100% {
             right: 70%;
             bottom: 100%;
-            transform: translate(0%, 0%);
+            -webkit-transform: translate(0%, 0%);
+                    transform: translate(0%, 0%);
         }
     }
 }
 
 .selected-paper-animation {
-    animation: selectedPaper 1s forwards;
+    -webkit-animation: selectedPaper 1s forwards;
+            animation: selectedPaper 1s forwards;
 }
 .selected-scissors-animation {
-    animation: selectedScissors 1s forwards;
+    -webkit-animation: selectedScissors 1s forwards;
+            animation: selectedScissors 1s forwards;
 }
 .selected-rock-animation {
-    animation: selectedRock 1s forwards;
+    -webkit-animation: selectedRock 1s forwards;
+            animation: selectedRock 1s forwards;
 }
 .reverse-paper-animation {
-    animation: reversePaper 1s forwards;
+    -webkit-animation: reversePaper 1s forwards;
+            animation: reversePaper 1s forwards;
 }
 .reverse-scissors-animation {
-    animation: reverseScissors 1s forwards;
+    -webkit-animation: reverseScissors 1s forwards;
+            animation: reverseScissors 1s forwards;
 }
 .reverse-rock-animation {
-    animation: reverseRock 1s forwards;
+    -webkit-animation: reverseRock 1s forwards;
+            animation: reverseRock 1s forwards;
+}
+
+@-webkit-keyframes fade-out {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
 }
 
 @keyframes fade-out {
     0% { opacity: 1; }
     100% { opacity: 0; }
+}
+
+@-webkit-keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 @keyframes fade-in {
@@ -120,10 +255,12 @@
 }
 
 .fade-out {
-    animation: fade-out 1s forwards;
+    -webkit-animation: fade-out 1s forwards;
+            animation: fade-out 1s forwards;
 }
 .fade-in {
-    animation: fade-in 1s forwards;
+    -webkit-animation: fade-in 1s forwards;
+            animation: fade-in 1s forwards;
 }
 
 .expanded-container {
