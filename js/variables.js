@@ -1,4 +1,4 @@
-let score = 0;
+window.score = 10;
 let selected = null;
 let selectedType;
 let cooldown = false;

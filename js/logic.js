@@ -21,16 +21,17 @@ function homeSelection () {
 }
 
 function updateScore (score) {
+    window.score = score
     $("#score").html(score);
     localStorage.setItem("score", score)
 }
 
 function game (user, opponent) {
     cooldown = true;
+
     if (user.beats == opponent.name) {
-        score++
         setTimeout(() => {
-            updateScore(score);
+            updateScore(Number(window.score)+1);
         }, 3000);
         return "YOU WIN"
     }
@@ -44,7 +45,8 @@ function game (user, opponent) {
 
 $(document).ready(() => {
     let localScore = localStorage.getItem ("score")||0
-    updateScore(localScore)
+    updateScore(Number(localScore)||0)
+    console.log("Local!", localScore)
 
     $(".decision-item").each((item, value) => {
         let type = $(value).data('type');
