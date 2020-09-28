@@ -1,0 +1,131 @@
+@keyframes selectedPaper {
+    0% {}
+    100% {
+        left: -75%;
+        top: 25%;
+        transform: translate(0, 0) scale(1.4);
+    }
+}
+@keyframes reversePaper {
+    0% {
+        left: -75%;
+        top: 25%;
+        transform: translate(0, 0) scale(1.4);
+    }
+    100% {
+        left: 0%;
+        top: 0%;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@keyframes selectedScissors {
+    0% {}
+    100% {
+        right: 100%;
+        top: 25%;
+        transform: translate(0, 0) scale(1.4);
+    }
+}
+@keyframes reverseScissors {
+    0% {
+        right: 100%;
+        top: 25%;
+        transform: translate(0, 0) scale(1.4);
+    }
+    100% {
+        right: 0%;
+        top: 0%;
+        transform: translate(50%, -50%) scale(1);
+    }
+}
+
+@keyframes selectedRock {
+    0% {}
+    100% {
+        right: 100%;
+        bottom: 0%;
+        transform: translate(0, 0) scale(1.4);
+    }
+}
+@keyframes reverseRock {
+    0% {
+        right: 100%;
+        bottom: 0%;
+        transform: translate(0, 0) scale(1.4);
+    }
+    100% {
+        right: 50%;
+        bottom: 0%;
+        transform: translate(50%, 50%) scale(1);
+    }
+}
+
+@media (max-width: 1000px) {
+    @keyframes selectedPaper {
+        0% {}
+        100% {
+            left: -35%;
+            top: 0%;
+            transform: translate(0, -100%);
+        }
+    }
+    
+    @keyframes selectedScissors {
+        0% {}
+        100% {
+            right: 70%;
+            top: 0%;
+            transform: translate(0, -100%);
+        }
+    }
+    
+    @keyframes selectedRock {
+        0% {}
+        100% {
+            right: 70%;
+            bottom: 100%;
+            transform: translate(0%, 0%);
+        }
+    }
+}
+
+.selected-paper-animation {
+    animation: selectedPaper 1s forwards;
+}
+.selected-scissors-animation {
+    animation: selectedScissors 1s forwards;
+}
+.selected-rock-animation {
+    animation: selectedRock 1s forwards;
+}
+.reverse-paper-animation {
+    animation: reversePaper 1s forwards;
+}
+.reverse-scissors-animation {
+    animation: reverseScissors 1s forwards;
+}
+.reverse-rock-animation {
+    animation: reverseRock 1s forwards;
+}
+
+@keyframes fade-out {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.fade-out {
+    animation: fade-out 1s forwards;
+}
+.fade-in {
+    animation: fade-in 1s forwards;
+}
+
+.expanded-container {
+    width: 400px !important;
+}
