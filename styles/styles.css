@@ -155,6 +155,7 @@ body, html {
     cursor: pointer;
     width: 200px;
     height: 200px;
+    z-index: 3;
 }
 
 .item:hover .item-content-top {
@@ -294,10 +295,12 @@ body, html {
     background-color: transparent;
 }
 .btn-rules {
-    position: fixed;
-    bottom: 0;
     right: 0;
+    bottom: 0;
     margin: 1rem;
+    position: fixed;
+    letter-spacing: 3px;
+    font-weight: 400;
 }
 .primary-button:hover {
     background-color: rgba(255, 255, 255, 0.7);
@@ -342,6 +345,7 @@ body, html {
 }
 
 .modal {
+    z-index: 100;
     position: absolute;
     top: 0%; left: 0%;
     opacity: 0; pointer-events: none;

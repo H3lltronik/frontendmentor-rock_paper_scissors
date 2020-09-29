@@ -262,3 +262,8 @@
     -webkit-animation: fade-in 1s forwards;
             animation: fade-in 1s forwards;
 }
+
+
+.item-winner {
+    z-index: 2;
+}

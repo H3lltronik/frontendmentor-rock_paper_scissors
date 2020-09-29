@@ -49,6 +49,10 @@ function showHomeSelection (homeSelected, result) {
     }, 3000);
 }
 
+function showWinnerAnim (el) {
+    
+}
+
 function restartHome (selection) {
     $("#home-selection-inner").removeClass (selection.name + "-inner");
     $("#home-selection-outer").removeClass (selection.name + "-outer");

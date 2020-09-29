@@ -33,9 +33,11 @@ function game (user, opponent) {
         setTimeout(() => {
             updateScore(Number(window.score)+1);
         }, 3000);
+        showWinnerAnim (name.el)
         return "YOU WIN"
     }
     else if (opponent.beats == user.name) {
+        showWinnerAnim (opponent.el)
         return "YOU LOSE"
     }
     else {
