@@ -8,7 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,600;0,700;1,600;1,700&display=swap');
 @import url("./animations.css");
 
-body {
+body, html {
     margin: 0;
     padding: 0;
     
@@ -17,8 +17,6 @@ body {
     position: relative;
     background: -o-radial-gradient(top,  ellipse,  rgb(31, 51, 56),  rgb(20,21,57));
     background: radial-gradient(ellipse at top,  rgb(31, 51, 56),  rgb(20,21,57));
-    width: 100vw;
-    height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -29,8 +27,8 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
 
-    max-width: 100vw;
-    max-height: 100vh;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -296,7 +294,7 @@ body {
     background-color: transparent;
 }
 .btn-rules {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     right: 0;
     margin: 1rem;
@@ -478,8 +476,9 @@ body {
     }
 
     .modal-close {
+        position: fixed;
         top: unset;
-        bottom: 0;
+        bottom: 30px;
         left: 50%;
         transform: translateX(-50%) translateY(-250%);
     }
