@@ -47,7 +47,6 @@ function showHomeSelection (homeSelected, result) {
             $(".paper-container").addClass("paper-container-bug-fix");
         }, 250);
     }, 3000);
-
 }
 
 function restartHome (selection) {

@@ -57,4 +57,14 @@ $(document).ready(() => {
     $("#play-again").on("click", () => {
         window.location.reload()
     })
+
+    $(".modal-close-action").on("click", () => {
+        $(".modal").removeClass("fade-in")
+        $(".modal").addClass("fade-out")
+    })
+    
+    $(".modal-open-action").on("click", () => {
+        $(".modal").removeClass("fade-out")
+        $(".modal").addClass("fade-in")
+    })
 })
